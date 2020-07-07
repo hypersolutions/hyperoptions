@@ -14,7 +14,7 @@
         <Authors>Hyperbolic Solutions</Authors>
         <Company>Hyperbolic Solutions</Company>
         <Title>Hyperbolic Options Framework</Title>
-        <PackageProjectUrl>https://github.com/hypersolutions/hyperioc</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/hypersolutions/hyperoptions</PackageProjectUrl>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <Description>Simple API for handling command line options</Description>
         <Copyright>Hyperbolic Solutions 2020</Copyright>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageId>HyperOptions</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Hyperbolic Solutions</Authors>
+        <Company>Hyperbolic Solutions</Company>
+        <Title>Hyperbolic Options Framework</Title>
+        <PackageProjectUrl>https://github.com/hypersolutions/hyperioc</PackageProjectUrl>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Description>Simple API for handling command line options</Description>
+        <Copyright>Hyperbolic Solutions 2020</Copyright>
+        <PackageTags>Command line options parsing</PackageTags>
+        <RepositoryUrl>https://github.com/hypersolutions/hyperoptions</RepositoryUrl>
+        <RepositoryType>github</RepositoryType>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageReleaseNotes>New release</PackageReleaseNotes>
+        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>HyperOptions.Tests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
+    </ItemGroup>
+</Project>

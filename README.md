@@ -79,6 +79,18 @@ The _CommandLineParser.Parse_ method has an optional parameter for the output fo
 
 ## Developer Notes
 
+An example command lines for the above options:
+
+```bash
+-p "c:\temp" -l "Console,File"
+
+-?
+
+--help
+
+--path "c:\temp" --loggers "Console,File"
+```
+
 ### Building and Publishing
 
 From the root, to build, run:

@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5E0E16F-D0D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{922544C4-78A9-442C-B83B-73A02473E9AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperOptions.Tests", "test\HyperOptions.Tests\HyperOptions.Tests.csproj", "{D87E0E16-627A-4206-BC4F-8A95EBC3ED0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperOptions.UnitTests", "test\HyperOptions.UnitTests\HyperOptions.UnitTests.csproj", "{D87E0E16-627A-4206-BC4F-8A95EBC3ED0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperOptions.TestHarness", "test\HyperOptions.TestHarness\HyperOptions.TestHarness.csproj", "{20E5DC32-98F4-41EA-9F3E-AFA08F2188A8}"
 EndProject

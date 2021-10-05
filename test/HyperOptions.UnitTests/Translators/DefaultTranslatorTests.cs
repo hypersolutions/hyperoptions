@@ -2,7 +2,7 @@ using HyperOptions.Translators;
 using Shouldly;
 using Xunit;
 
-namespace HyperOptions.Tests.Translators
+namespace HyperOptions.UnitTests.Translators
 {
     public class DefaultTranslatorTests
     {

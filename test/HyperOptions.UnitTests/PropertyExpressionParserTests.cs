@@ -2,7 +2,7 @@ using System;
 using Shouldly;
 using Xunit;
 
-namespace HyperOptions.Tests
+namespace HyperOptions.UnitTests
 {
     public class PropertyExpressionParserTests
     {

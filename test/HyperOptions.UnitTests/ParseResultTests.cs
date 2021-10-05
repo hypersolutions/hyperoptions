@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Shouldly;
 using Xunit;
 
-namespace HyperOptions.Tests
+namespace HyperOptions.UnitTests
 {
     public class ParseResultTests
     {

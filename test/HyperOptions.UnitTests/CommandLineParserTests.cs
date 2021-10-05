@@ -3,7 +3,7 @@ using HyperOptions.Translators;
 using Shouldly;
 using Xunit;
 
-namespace HyperOptions.Tests
+namespace HyperOptions.UnitTests
 {
     public class CommandLineParserTests
     {

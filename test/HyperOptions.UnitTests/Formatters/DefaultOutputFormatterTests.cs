@@ -5,7 +5,7 @@ using HyperOptions.Formatters;
 using Shouldly;
 using Xunit;
 
-namespace HyperOptions.Tests.Formatters
+namespace HyperOptions.UnitTests.Formatters
 {
     public class DefaultOutputFormatterTests
     {

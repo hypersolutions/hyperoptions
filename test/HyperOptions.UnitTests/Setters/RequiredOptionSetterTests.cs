@@ -4,7 +4,7 @@ using HyperOptions.Translators;
 using Shouldly;
 using Xunit;
 
-namespace HyperOptions.Tests.Setters
+namespace HyperOptions.UnitTests.Setters
 {
     public class RequiredOptionSetterTests
     {

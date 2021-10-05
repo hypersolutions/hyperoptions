@@ -4,9 +4,9 @@ using System.Reflection;
 
 namespace HyperOptions
 {
-    public sealed class PropertyExpressionParser
+    public static class PropertyExpressionParser
     {
-        public OptionInfo GetOptionInfo<TOptions, TTarget>(Expression<Func<TOptions, TTarget>> value)
+        public static OptionInfo GetOptionInfo<TOptions, TTarget>(Expression<Func<TOptions, TTarget>> value)
         {
             var property = GetPropertyInfoExpression(value);
             return new OptionInfo(property.Name, property.PropertyType);

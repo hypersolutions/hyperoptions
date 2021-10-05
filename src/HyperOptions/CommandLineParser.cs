@@ -15,7 +15,6 @@ namespace HyperOptions
     {
         private readonly string[] _messages;
         private readonly List<OptionInfo> _options = new List<OptionInfo>();
-        private readonly PropertyExpressionParser _propertyExpressionParser = new PropertyExpressionParser();
         private readonly List<string> _errors = new List<string>();
 
         /// <summary>
@@ -46,7 +45,7 @@ namespace HyperOptions
             Expression<Func<TOptions, TTarget>> value, 
             bool isHelp = false)
         {
-            var info = _propertyExpressionParser.GetOptionInfo(value);
+            var info = PropertyExpressionParser.GetOptionInfo(value);
             
             if (_options.Any(o => o.Name == info.Name))
                 throw new InvalidOperationException($"The property {info.Name} already exists.");

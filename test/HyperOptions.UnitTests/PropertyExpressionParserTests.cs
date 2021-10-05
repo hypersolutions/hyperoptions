@@ -9,9 +9,8 @@ namespace HyperOptions.UnitTests
         [Fact]
         public void FromReadonly_GetOptionInfo_ThrowsException()
         {
-            var parser = new PropertyExpressionParser();
-
-            var error = Should.Throw<ArgumentException>(() => parser.GetOptionInfo<TestOptions, bool>(p => p.IsValid));
+            var error = Should.Throw<ArgumentException>(
+                () => PropertyExpressionParser.GetOptionInfo<TestOptions, bool>(p => p.IsValid));
             
             error.Message.ShouldContain("Property IsValid is readonly.");
         }
@@ -19,9 +18,7 @@ namespace HyperOptions.UnitTests
         [Fact]
         public void FromPath_GetOptionInfo_SetsName()
         {
-            var parser = new PropertyExpressionParser();
-            
-            var info = parser.GetOptionInfo<TestOptions, string>(p => p.Path);
+            var info = PropertyExpressionParser.GetOptionInfo<TestOptions, string>(p => p.Path);
             
             info.Name.ShouldBe("Path");
         }
@@ -29,9 +26,7 @@ namespace HyperOptions.UnitTests
         [Fact]
         public void FromPath_GetOptionInfo_SetsTargetType()
         {
-            var parser = new PropertyExpressionParser();
-            
-            var info = parser.GetOptionInfo<TestOptions, string>(p => p.Path);
+            var info = PropertyExpressionParser.GetOptionInfo<TestOptions, string>(p => p.Path);
             
             info.TargetType.ShouldBe(typeof(string));
         }
